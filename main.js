@@ -41,7 +41,7 @@ var getScriptPromisify = (src) => {
             startAngle: 180,
             endAngle: 0,
             min: 0,
-            max: 240,
+            max: 10,
             splitNumber: 12,
             itemStyle: {
               color: '#58D9F9',
@@ -115,11 +115,22 @@ var getScriptPromisify = (src) => {
                 }
               }
             },
-            data: [
-              {
-                value: 100
-              }
-            ]
+              "dataBindings": {
+    "myDataSource": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  },
           }
         ]
       };
