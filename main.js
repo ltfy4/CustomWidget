@@ -41,7 +41,7 @@ var getScriptPromisify = (src) => {
             startAngle: 180,
             endAngle: 0,
             min: 0,
-            max: 240,
+            max: 10,
             splitNumber: 12,
             itemStyle: {
               color: '#58D9F9',
