@@ -115,11 +115,22 @@ var getScriptPromisify = (src) => {
                 }
               }
             },
-            data: [
-              {
-                value: 100
-              }
-            ]
+            "dataBindings": {
+                "myDataSource": {
+                  "feeds": [
+                    {
+                      "id": "dimensions",
+                      "description": "Dimensions",
+                      "type": "dimension"
+                    },
+                    {
+                      "id": "measures",
+                      "description": "Measures",
+                      "type": "mainStructureMember"
+                    }
+                  ]
+                }
+              },
           }
         ]
       };
